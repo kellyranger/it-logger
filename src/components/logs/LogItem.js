@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const LogItem = ({ log }) => {
   return (
-    <li className="colletion-item">
+    <li className="collection-item">
       <div>
         <a href="#edit-log-modal"
           className={`modal-trigger ${
@@ -15,12 +15,12 @@ const LogItem = ({ log }) => {
         <br />
         <span className="grey-text">
           <span className="black-text">ID #{log.id}</span>
-          Last updated by: {'  '}
+          Last updated by:{''}
           <span className="black-text">{log.tech}</span>
         on <Moment format="MMM Do YYYY, h:mm:ss a">{log.date}</Moment>
         </span>
         <a href="#!" className="secondary-content">
-          <i className="material-icon grey-text">delete</i>
+          <i className="material-icons red-text">delete</i>
         </a>
       </div>
 
